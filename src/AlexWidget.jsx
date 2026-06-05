@@ -13,7 +13,6 @@ const AlexWidget = () => {
   const [loading, setLoading] = useState(false);
   const [showCTA, setShowCTA] = useState(false);
   const [selectedCTA, setSelectedCTA] = useState(null);
-  const [projectInfo, setProjectInfo] = useState({});
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -437,10 +436,11 @@ Your goal: Build trust, educate, and guide them toward booking a consultation or
         Choose a time that works for you:
       </p>
       <iframe
-        src="https://calendly.com/rbgsurfaces" // Replace with actual Calendly URL
+        src="https://calendly.com/rbgsurfaces"
         width="100%"
         height="600"
         frameBorder="0"
+        title="Schedule a consultation with RBG Surfaces"
         style={{ borderRadius: '4px' }}
       />
       <button
